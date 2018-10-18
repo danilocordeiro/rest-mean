@@ -16,7 +16,7 @@ export class User extends BaseModel {
   })
   password: string;
 
-  @prop({ enum: UserRole })
+  @prop({ enum: UserRole, default: UserRole.User })
   role?: UserRole;
   @prop() firstName?: string;
   @prop() lastName?: string;
